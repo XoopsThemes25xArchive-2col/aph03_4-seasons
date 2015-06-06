@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- APH003 Theme by aphex http://www.aphexthemes.com -->
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="spring" href="<{$xoops_imageurl}>css/spring.css" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="winter" href="<{$xoops_imageurl}>css/winter.css" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="fall" href="<{$xoops_imageurl}>css/fall.css" />
+<link rel="alternate stylesheet" type="text/css" media="all" title="summer" href="<{$xoops_imageurl}>css/summer.css" />
+	<script src="<{$xoops_imageurl}>scripts/aph003_cookies.js" type="text/javascript"></script>
+<!-- <script src="<{$xoops_imageurl}>scripts/aph003preloads.js" type="text/javascript"></script> -->
+	<script src="<{$xoops_imageurl}>scripts/styleswitcher.js" type="text/javascript"></script>
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<!-- ### START OF MAIN WRAPPER ### -->
+<div class="topwrapper">
+<!--### START OF HEADER ### -->
+<div class="header">
+        <h1><{$xoops_sitename}></h1>
+      <h2><{$xoops_slogan}></h2>
+</div>
+<div id="headcenter">
+	<div id="APH003-02_">
+	</div>
+	<div id="APH003-03_">
+	<a href="<{$xoops_url}>/">Home</a>
+	</div>
+	<div id="APH003-04_">
+	</div>
+	<div id="APH003-05_">
+	<a href="<{$xoops_url}>/modules/news/">News</a>
+	</div>
+	<div id="APH003-06_">
+	</div>
+	<div id="APH003-07_">
+	<a href="">Links</a>
+	</div>
+	<div id="APH003-08_">
+	</div>
+	<div id="APH003-09_">
+	<a href="">Forums</a>
+	</div>
+	<div id="APH003-10_">
+	</div>
+	<div id="APH003-11_">
+	</div>
+	</div>
+<!-- ### END OF HEADER ### -->
+<div class="btmwrapper">
+
+<div class="wrapper">
+<div class="left">
+<div style="margin-left: 10px">
+					<a href="#" onclick="setActiveStyleSheet('winter'); return false;"><img src="<{$xoops_imageurl}>visual/4seasons_01.png" title="Switch to winter" alt="Switch to winter" width ="37" height="33" /></a>
+					<a href="#" onclick="setActiveStyleSheet('spring'); return false;"><img src="<{$xoops_imageurl}>visual/4seasons_02.png" title="Switch to spring" alt="Switch to spring" width ="36" height="33" /></a>
+					<a href="#" onclick="setActiveStyleSheet('summer'); return false;"><img src="<{$xoops_imageurl}>visual/4seasons_03.png" title="Switch to summer" alt="Switch to summer" width ="38" height="33" /></a>
+					<a href="#" onclick="setActiveStyleSheet('fall'); return false;"><img src="<{$xoops_imageurl}>visual/4seasons_04.png" title="Switch to autumn" alt="Switch to autumn" width ="39" height="33" /></a>
+</div>
+<!-- ## START OF NAVIGATION ## -->
+<{foreach item=block from=$xoops_lblocks}>
+	<div class="infobox">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+		<div class="stuffbtm"></div>
+	</div>
+	<{/foreach}>
+<{foreach item=block from=$xoops_rblocks}>
+	<div class="infobox">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+		<div class="stuffbtm"></div>
+	</div>
+	<{/foreach}>
+<!-- ## END OF NAVIGATION ## -->
+</div>
+<!-- ### END OF LEFT COLUMN ### -->
+
+<!-- ### MAIN CONTENT START ### -->
+<div class="center">
+<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+<{foreach item=block from=$xoops_ccblocks}>
+<div class="post">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+<div class="stuffbtm"></div>
+</div>
+	<{/foreach}>
+<div>
+<{foreach item=block from=$xoops_clblocks}>
+<div class="post1">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+<div class="stuffbtlr"></div>
+</div>
+	<{/foreach}>
+<{foreach item=block from=$xoops_crblocks}>
+<div class="post2">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+<div class="stuffbtlr"></div>
+</div>
+	<{/foreach}>
+</div>
+		<{/if}>
+ <{if $xoops_contents}>
+	  <div class="cont">
+          <{$xoops_contents}>
+       </div>
+ <{/if}>
+       <{if $xoBlocks.page_bottomcenter}>
+	<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+<div class="post">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+<div class="stuffbtm"></div>
+</div>
+	<{/foreach}>
+ <{/if}>
+	 <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<{foreach from=$xoBlocks.page_bottomleft item=block}>
+<div class="post1">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+<div class="stuffbtlr"></div>
+</div>
+	<{/foreach}>
+		<{foreach from=$xoBlocks.page_bottomright item=block}>
+<div class="post2">
+		<h2><{$block.title}></h2>
+		<div class="stuff"><{$block.content}></div>
+<div class="stuffbtlr"></div>
+</div>
+	<{/foreach}>
+ <{/if}>
+</div>
+<!--### END MAIN CONTENT ### -->
+
+<div class="clear"></div>
+</div>
+</div>
+<!-- ### END OF WRAPPER ### -->
+<!-- ### START OF FOOTER ### -->
+<div class="footer">
+<div style="padding-left: 150px"><{$xoops_footer}></div>
+<br />
+<div style="color: #ebecd3;padding-top: 5px">Design by <a href="http://www.aphexthemes.com" title="Designer's Link">Aph3x</a></div>
+</div>
+<!-- ### END OF FOOTER ### -->
+<br />
+</div>
+</body>
+</html>
+
